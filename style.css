@@ -22,8 +22,8 @@ body * {
 #container {
   width: 588px;
   height: 712px;
-  border: 2px solid red;
   margin: 56px auto 0px;
+  padding: 0 24px;
 }
 
 #profile {
@@ -45,13 +45,42 @@ body * {
 
 ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
 }
 
 ul li a {
-  border: 2px solid orchid;
-
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.3s;
 }
+
+ul li a:hover{
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
+
+/*Social Links*/
+
+#social-links{
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px;
+  font-size: 24px;
+}
+
